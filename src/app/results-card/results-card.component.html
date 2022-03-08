@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <button mat-flat-button color="basic" (click)="onResetLocation()">
+    Elegir otra ubicación
+  </button>
+</mat-toolbar>
+
+<app-search-bar></app-search-bar>
+
+<div class="wrapper">
+  <div class="item" *ngFor="let product of productsSlice">
+    <app-product-item [product]="product" [city]="city"></app-product-item>
+  </div>
+</div>
+
+<mat-paginator
+  [length]="searchedProducts.length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="[5, 10, 50, 100]"
+  aria-label="Select page"
+  (page)="onPageChange($event)"
+>
+</mat-paginator>

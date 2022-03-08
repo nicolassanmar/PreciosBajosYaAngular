@@ -1,0 +1,20 @@
+<div class="container full-width">
+  <img mat-card-md-image class="comida" [src]="productImage" />
+
+  <mat-card class="card">
+    <mat-card-title-group>
+      <a
+        href="https://www.pedidosya.com.uy/restaurantes/{{ city }}/{{
+          product.link
+        }}-menu"
+      >
+        <img mat-card-avatar [src]="restaurantImage" />
+      </a>
+      <mat-card-title>{{ product.nombre }}</mat-card-title>
+      <mat-card-subtitle>{{ product.seccion }}</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+      {{ product.descripcion }}
+    </mat-card-content>
+  </mat-card>
+</div>

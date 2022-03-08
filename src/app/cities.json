@@ -1,0 +1,1116 @@
+{
+  "count": 157,
+  "data": [
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1,
+      "latitude": -34.9011127,
+      "longitude": -56.1645314,
+      "name": "Montevideo"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 34606 },
+      "id": 10,
+      "latitude": -34.9368789,
+      "longitude": -54.9281496,
+      "name": "Punta del Este"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 14458 },
+      "id": 11,
+      "latitude": -34.825945,
+      "longitude": -55.9692754,
+      "name": "Ciudad de la Costa"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 42,
+      "latitude": -34.4790141,
+      "longitude": -54.3352997,
+      "name": "Rocha"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 34608 },
+      "id": 43,
+      "latitude": -34.905408,
+      "longitude": -54.9501708,
+      "name": "Maldonado"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 64,
+      "latitude": -32.2706789,
+      "longitude": -58.081134,
+      "name": "Paysandú"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 101,
+      "latitude": -31.3854988,
+      "longitude": -57.9600793,
+      "name": "Salto"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 1718 },
+      "id": 129,
+      "latitude": -34.8643645,
+      "longitude": -55.2716278,
+      "name": "Piriápolis"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 135,
+      "latitude": -33.3822982,
+      "longitude": -56.5275506,
+      "name": "Durazno"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 136,
+      "latitude": -34.3486042,
+      "longitude": -56.7075141,
+      "name": "San José"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 375,
+      "latitude": -33.1228052,
+      "longitude": -58.2975552,
+      "name": "Fray Bentos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 425,
+      "latitude": -30.9178625,
+      "longitude": -55.5469032,
+      "name": "Rivera"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 20496 },
+      "id": 439,
+      "latitude": -34.7075472,
+      "longitude": -56.214709,
+      "name": "Las Piedras"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 449,
+      "latitude": -22.9492586,
+      "longitude": -43.1545757,
+      "name": "Pan de Azúcar"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 34607 },
+      "id": 453,
+      "latitude": -34.7972681,
+      "longitude": -54.9275885,
+      "name": "San Carlos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 590,
+      "latitude": -30.4059907,
+      "longitude": -56.470944,
+      "name": "Artigas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 592,
+      "latitude": -34.4607189,
+      "longitude": -57.8339099,
+      "name": "Colonia del Sacramento"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 594,
+      "latitude": -31.7206837,
+      "longitude": -55.9859887,
+      "name": "Tacuarembó"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 596,
+      "latitude": -34.3042878,
+      "longitude": -57.2310521,
+      "name": "Nueva Helvecia"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 608,
+      "latitude": -34.1,
+      "longitude": -56.216667,
+      "name": "Florida"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 610,
+      "latitude": -34.5291043,
+      "longitude": -56.2873482,
+      "name": "Canelones"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 22700 },
+      "id": 612,
+      "latitude": -34.3643905,
+      "longitude": -55.2590707,
+      "name": "Minas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 632,
+      "latitude": -32.3648617,
+      "longitude": -54.1665506,
+      "name": "Melo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 654,
+      "latitude": -34.7117766,
+      "longitude": -55.963705,
+      "name": "Pando"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 664,
+      "latitude": -33.229046,
+      "longitude": -54.3576473,
+      "name": "Treinta y Tres"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 665,
+      "latitude": -30.2609293,
+      "longitude": -57.5929166,
+      "name": "Bella Unión"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 666,
+      "latitude": -33.2604441,
+      "longitude": -58.0185646,
+      "name": "Mercedes"
+    },
+    {
+      "addressUseCase": "STREET_SEARCH_FULL_ADDRESS",
+      "defaultArea": { "id": 33295 },
+      "id": 717,
+      "latitude": -34.777174,
+      "longitude": -55.758167,
+      "name": "Costa de Oro"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 825,
+      "latitude": -34.6161181,
+      "longitude": -54.1515553,
+      "name": "Arachania"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 826,
+      "latitude": -34.6559151,
+      "longitude": -54.1830076,
+      "name": "La Paloma"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 827,
+      "latitude": -34.0423394,
+      "longitude": -53.5473322,
+      "name": "Punta del Diablo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 828,
+      "latitude": -32.8058902,
+      "longitude": -56.5224129,
+      "name": "Paso de los Toros"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 829,
+      "latitude": -34.763314,
+      "longitude": -55.658734,
+      "name": "Costa Azul"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 832,
+      "latitude": -34.292233,
+      "longitude": -55.955536,
+      "name": "San Ramón"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 840,
+      "latitude": -34.8176238,
+      "longitude": -56.0182019,
+      "name": "Colonia Nicolich"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 841,
+      "latitude": -9.9753837,
+      "longitude": -67.824918,
+      "name": "Río Branco"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 849,
+      "latitude": -33.692754,
+      "longitude": -53.4552817,
+      "name": "Chuy"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 868,
+      "latitude": -34.7618498,
+      "longitude": -56.013851,
+      "name": "Barros Blancos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 870,
+      "latitude": -31.4543827,
+      "longitude": -57.9077341,
+      "name": "Termas del Daymán"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 885,
+      "latitude": -34.9076753,
+      "longitude": -56.2011147,
+      "name": "Solís"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 887,
+      "latitude": -34.5892697,
+      "longitude": -54.125661,
+      "name": "La Pedrera"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 929,
+      "latitude": -34.9030384,
+      "longitude": -55.0424472,
+      "name": "Punta Ballena"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 941,
+      "latitude": 39.8628316,
+      "longitude": -4.0273231,
+      "name": "Toledo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 963,
+      "latitude": -34.5777738,
+      "longitude": -54.1202107,
+      "name": "Punta Rubia"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 966,
+      "latitude": -33.9953859,
+      "longitude": -58.2861542,
+      "name": "Carmelo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1018,
+      "latitude": -34.6488719,
+      "longitude": -56.0668126,
+      "name": "Sauce"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1023,
+      "latitude": -33.877469,
+      "longitude": -58.4002165,
+      "name": "Nueva Palmira"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1167,
+      "latitude": -34.421323,
+      "longitude": -57.4485845,
+      "name": "Juan Lacaze"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1168,
+      "latitude": -32.9587022,
+      "longitude": -60.6930416,
+      "name": "Rosario"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1190,
+      "latitude": -31.7790432,
+      "longitude": -54.6945328,
+      "name": "Vichadero"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1191,
+      "latitude": -31.1934245,
+      "longitude": -55.766177,
+      "name": "Tranqueras"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1192,
+      "latitude": -30.7190522,
+      "longitude": -57.3298733,
+      "name": "Baltasar Brum"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1193,
+      "latitude": -30.9993803,
+      "longitude": -56.870471,
+      "name": "Sequeira"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1194,
+      "latitude": -30.5844981,
+      "longitude": -57.6793278,
+      "name": "Colonia Palma"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1196,
+      "latitude": -31.8790792,
+      "longitude": -55.4610075,
+      "name": "Ansina"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1197,
+      "latitude": -30.4275769,
+      "longitude": -57.4429285,
+      "name": "Tomás Gomensoro"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1198,
+      "latitude": -31.6669909,
+      "longitude": -55.9623125,
+      "name": "Balneario Iporá"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1199,
+      "latitude": -32.144708,
+      "longitude": -56.117015,
+      "name": "Curtina"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1200,
+      "latitude": -34.7619075,
+      "longitude": -55.7428639,
+      "name": "Las Toscas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1201,
+      "latitude": -32.69295,
+      "longitude": -56.002705,
+      "name": "Rincon Del Bonete"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1202,
+      "latitude": -32.6149548,
+      "longitude": -55.8301177,
+      "name": "San Gregorio de Polanco"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1203,
+      "latitude": -33.6796818,
+      "longitude": -53.5554475,
+      "name": "Dieciocho de Julio"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1204,
+      "latitude": -33.2315701,
+      "longitude": -54.3862547,
+      "name": "19 de Abril"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1205,
+      "latitude": -33.6740514,
+      "longitude": -54.2101894,
+      "name": "Lascano"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1206,
+      "latitude": -34.3366684,
+      "longitude": -53.793882,
+      "name": "Barra de Valizas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1207,
+      "latitude": -33.7635641,
+      "longitude": -53.4041053,
+      "name": "Barra del Chuy"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1208,
+      "latitude": -34.2750352,
+      "longitude": -53.783028,
+      "name": "Aguas Dulces"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1222,
+      "latitude": -32.8895602,
+      "longitude": -55.6162351,
+      "name": "Blanquillo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1223,
+      "latitude": -33.0596128,
+      "longitude": -56.4729146,
+      "name": "Carlos Reyles"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1224,
+      "latitude": -33.240297,
+      "longitude": -56.016771,
+      "name": "Carmen"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1225,
+      "latitude": -32.7251143,
+      "longitude": -55.582949,
+      "name": "La Paloma Durazno"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1226,
+      "latitude": -32.8431778,
+      "longitude": -55.8954952,
+      "name": "San Jorge"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1227,
+      "latitude": -33.3516458,
+      "longitude": -56.5112061,
+      "name": "Santa Bernardina"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1228,
+      "latitude": -33.337533,
+      "longitude": -55.630108,
+      "name": "Sarandí del Yí"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1229,
+      "latitude": 31.7053821,
+      "longitude": 35.2024425,
+      "name": "Belén"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1230,
+      "latitude": -33.227158,
+      "longitude": -60.3298704,
+      "name": "Villa Constitución"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1231,
+      "latitude": -30.9437051,
+      "longitude": -57.527801,
+      "name": "Termas del Arapey"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1232,
+      "latitude": -33.9608402,
+      "longitude": -57.0872274,
+      "name": "Ismael Cortinas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1233,
+      "latitude": -33.6038003,
+      "longitude": -53.7179359,
+      "name": "San Luis al Medio"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1234,
+      "latitude": -34.0351066,
+      "longitude": -54.2784231,
+      "name": "Velázquez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1235,
+      "latitude": -33.889896,
+      "longitude": -53.5256956,
+      "name": "La Coronilla"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1236,
+      "latitude": -31.871147,
+      "longitude": -54.1621967,
+      "name": "Aceguá"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1237,
+      "latitude": -32.5132114,
+      "longitude": -54.5245462,
+      "name": "Fraile Muerto"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1238,
+      "latitude": -31.9637377,
+      "longitude": -54.125661,
+      "name": "Isidoro Noblía"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1239,
+      "latitude": -32.7419316,
+      "longitude": -53.2584568,
+      "name": "Lago Merín"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1240,
+      "latitude": -32.8361857,
+      "longitude": -54.7604286,
+      "name": "Tupambaé"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1241,
+      "latitude": -32.9481877,
+      "longitude": -53.9378421,
+      "name": "Vergara"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1242,
+      "latitude": -33.2044648,
+      "longitude": -53.8047376,
+      "name": "General Enrique Martinez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1243,
+      "latitude": -33.2599177,
+      "longitude": -54.4068603,
+      "name": "Villa Sara"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1244,
+      "latitude": -33.1008741,
+      "longitude": -55.1320653,
+      "name": "Cerro Chato"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1245,
+      "latitude": 18.3402164,
+      "longitude": -67.2500174,
+      "name": "Rincón"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1246,
+      "latitude": -34.759984,
+      "longitude": -55.7731249,
+      "name": "José Pedro Varela"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1247,
+      "latitude": -34.0391502,
+      "longitude": -54.7769108,
+      "name": "Mariscala"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1248,
+      "latitude": -33.5233776,
+      "longitude": -54.944665,
+      "name": "Zapicán"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1249,
+      "latitude": -34.3220583,
+      "longitude": -54.9859676,
+      "name": "Villa Serrana"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1250,
+      "latitude": -34.601175,
+      "longitude": -55.463777,
+      "name": "Solís de Mataojo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1251,
+      "latitude": -33.4718348,
+      "longitude": -55.1467512,
+      "name": "José Batlle y Ordóñez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1252,
+      "latitude": 43.3506635,
+      "longitude": -3.0094683,
+      "name": "Algorta"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1253,
+      "latitude": -32.8179761,
+      "longitude": -57.0421483,
+      "name": "Grecco"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1254,
+      "latitude": -32.9809545,
+      "longitude": -58.0470008,
+      "name": "Nuevo Berlín"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1255,
+      "latitude": -32.6626805,
+      "longitude": -58.1295074,
+      "name": "San Javier"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1256,
+      "latitude": -32.7021934,
+      "longitude": -57.6382382,
+      "name": "Young"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1257,
+      "latitude": -33.1633255,
+      "longitude": -58.3560037,
+      "name": "Las Cañas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1258,
+      "latitude": -32.4104614,
+      "longitude": -63.243645,
+      "name": "Villa María"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1259,
+      "latitude": 35.4375198,
+      "longitude": -106.1245907,
+      "name": "Los Cerrillos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1260,
+      "latitude": -34.683901,
+      "longitude": -55.709609,
+      "name": "Doctor Francisco Soca"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1261,
+      "latitude": -34.7328945,
+      "longitude": -56.0305724,
+      "name": "Joaquín Suárez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1262,
+      "latitude": -34.5907059,
+      "longitude": -56.2566093,
+      "name": "Juanicó"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1263,
+      "latitude": -34.6636109,
+      "longitude": -56.2230875,
+      "name": "Progreso"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1264,
+      "latitude": -34.2452034,
+      "longitude": -55.9219378,
+      "name": "Chamizo"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1265,
+      "latitude": -16.489689,
+      "longitude": -68.1192936,
+      "name": "La Paz"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1266,
+      "latitude": -34.2899021,
+      "longitude": -56.3964126,
+      "name": "Cardal"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1267,
+      "latitude": -34.1035247,
+      "longitude": -55.6523091,
+      "name": "Casupá"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1268,
+      "latitude": -31.6600226,
+      "longitude": -57.8892733,
+      "name": "Chapicuy"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1269,
+      "latitude": -32.3605627,
+      "longitude": -57.2000138,
+      "name": "Guichón"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1270,
+      "latitude": -31.9326576,
+      "longitude": -57.9020535,
+      "name": "Quebracho"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1271,
+      "latitude": -34.870754,
+      "longitude": -56.2161053,
+      "name": "Capurro"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1272,
+      "latitude": -34.7475926,
+      "longitude": -56.4215993,
+      "name": "Ciudad del Plata"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1273,
+      "latitude": -34.3583236,
+      "longitude": -57.0479481,
+      "name": "Ecilda Paullier"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1274,
+      "latitude": -34.6570243,
+      "longitude": -58.6753978,
+      "name": "Ituzaingó"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1275,
+      "latitude": -34.6395791,
+      "longitude": -56.6121145,
+      "name": "Libertad"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1276,
+      "latitude": -34.5256988,
+      "longitude": -56.794578,
+      "name": "Rafael Perazza"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1277,
+      "latitude": -34.3399033,
+      "longitude": -56.6710267,
+      "name": "Raigón"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1278,
+      "latitude": -34.3210078,
+      "longitude": -56.8072227,
+      "name": "Juan Soler"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1279,
+      "latitude": -34.5149884,
+      "longitude": -56.7615688,
+      "name": "Villa María San José"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1280,
+      "latitude": -34.6941667,
+      "longitude": -56.7496321,
+      "name": "Kiyú"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1281,
+      "latitude": -34.6930716,
+      "longitude": -55.8961208,
+      "name": "Empalme Olmos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1284,
+      "latitude": -33.8603461,
+      "longitude": -55.5441311,
+      "name": "Alejandro Gallinal"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1285,
+      "latitude": -34.4344239,
+      "longitude": -57.297393,
+      "name": "Blancarena"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1286,
+      "latitude": -33.6998112,
+      "longitude": -58.1081636,
+      "name": "Cañada Nieto"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1287,
+      "latitude": -33.469408,
+      "longitude": -55.6328828,
+      "name": "Capilla del Sauce"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1288,
+      "latitude": -33.8707399,
+      "longitude": -57.3694285,
+      "name": "Cardona"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1289,
+      "latitude": -34.858672,
+      "longitude": -56.1968762,
+      "name": "Castillos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1290,
+      "latitude": -34.3441788,
+      "longitude": -57.2649229,
+      "name": "Colonia Valdense"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1291,
+      "latitude": -33.5339107,
+      "longitude": -58.2177722,
+      "name": "Dolores"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1292,
+      "latitude": -34.6641705,
+      "longitude": -55.9945921,
+      "name": "El Totoral del Sauce"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1293,
+      "latitude": -34.7451253,
+      "longitude": -55.7647875,
+      "name": "Estación Atlántida"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1294,
+      "latitude": -33.6994662,
+      "longitude": -57.5292161,
+      "name": "José Enrique Rodó"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1295,
+      "latitude": -34.3687309,
+      "longitude": -57.568768,
+      "name": "Artilleros"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1296,
+      "latitude": -34.402302,
+      "longitude": -53.794941,
+      "name": "Cabo Polonio"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1300,
+      "latitude": -34.15217,
+      "longitude": -53.698961,
+      "name": "La Esmeralda"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1301,
+      "latitude": -34.4332028,
+      "longitude": -57.2437523,
+      "name": "Los Pinos"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1302,
+      "latitude": -34.4307913,
+      "longitude": -57.25222,
+      "name": "Playa Fomento"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1303,
+      "latitude": -32.8894587,
+      "longitude": -68.8458386,
+      "name": "Mendoza"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1304,
+      "latitude": -34.3729439,
+      "longitude": -57.479236,
+      "name": "Mevir Minuano"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1305,
+      "latitude": -34.4867748,
+      "longitude": -55.6287206,
+      "name": "Migues"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1306,
+      "latitude": -34.5031518,
+      "longitude": -55.5690835,
+      "name": "Montes"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1311,
+      "latitude": -34.892263,
+      "longitude": -56.2480095,
+      "name": "Florencio Sánchez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1312,
+      "latitude": -34.3792009,
+      "longitude": -56.542028,
+      "name": "Rodríguez"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1313,
+      "latitude": -34.6941667,
+      "longitude": -56.7496321,
+      "name": "Ordeig"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1317,
+      "latitude": -34.2043805,
+      "longitude": -54.7604286,
+      "name": "Aiguá"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1318,
+      "latitude": -34.4522519,
+      "longitude": -56.3880186,
+      "name": "Santa Lucía"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1320,
+      "latitude": 33.7454725,
+      "longitude": -117.867653,
+      "name": "Santa Ana"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1399,
+      "latitude": -34.8359146,
+      "longitude": -54.6451455,
+      "name": "José Ignacio"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1407,
+      "latitude": -34.7720294,
+      "longitude": -55.8411065,
+      "name": "Salinas"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1888,
+      "latitude": 10.691803,
+      "longitude": -61.222503,
+      "name": "Trinidad"
+    },
+    {
+      "addressUseCase": "DEFAULT",
+      "id": 1971,
+      "latitude": -34.2696756,
+      "longitude": -57.615575,
+      "name": "Tarariras"
+    }
+  ],
+  "max": 2147483647,
+  "offset": 0,
+  "sort": "",
+  "total": 157
+}

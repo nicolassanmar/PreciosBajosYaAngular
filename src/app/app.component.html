@@ -1,0 +1,10 @@
+<app-location-selector
+  *ngIf="location == undefined"
+  (submitLocation)="onSubmitLocation($event)"
+></app-location-selector>
+<app-results-card
+  *ngIf="location != undefined"
+  (resetLocation)="onResetLocation()"
+  [location]="location"
+  [city]="city"
+></app-results-card>
