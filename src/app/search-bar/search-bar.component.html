@@ -1,1 +1,59 @@
-<p>search-bar works!</p>
+<form [formGroup]="searchForm" class="search-form">
+  <mat-form-field class="full-width" appearance="outline">
+    <input
+      matInput
+      placeholder="Empanada..."
+      class="locationInput"
+      formControlName="search"
+    />
+  </mat-form-field>
+  <mat-checkbox formControlName="matchDescription"
+    >Buscar en la descripción del producto</mat-checkbox
+  >
+  <p>
+    Ordenar por:
+    <mat-button-toggle-group
+      name="orderBy"
+      aria-label="Order by"
+      value="precio"
+      formControlName="orderBy"
+    >
+      <!-- [formControl]="orderBy" -->
+      <mat-button-toggle value="precio">Precio</mat-button-toggle>
+      <mat-button-toggle value="precioConEnvio"
+        >Precio con Envío</mat-button-toggle
+      >
+      <mat-button-toggle value="estrellas">Estrellas</mat-button-toggle>
+      <mat-button-toggle value="tiempoEnvio">Tiempo de Envío</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <mat-button-toggle-group
+      name="Ascending"
+      aria-label="Ascending or not"
+      value="{{ true }}"
+      formControlName="ascendingOrder"
+    >
+      <mat-button-toggle value="{{ true }}"
+        ><mat-icon>keyboard_arrow_up</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="{{ false }}"
+        ><mat-icon>keyboard_arrow_down</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </p>
+
+  <p>
+    <mat-checkbox formControlName="onlyShowImages"
+      >Mostrar sólo productos con imagen</mat-checkbox
+    >
+  </p>
+  <p>
+    <mat-checkbox formControlName="onlyShowOpen"
+      >Mostrar sólo locales abiertos actualmente</mat-checkbox
+    >
+  </p>
+
+  <button mat-icon-button color="primary" (click)="onSearch()">
+    <mat-icon>search</mat-icon>
+  </button>
+</form>

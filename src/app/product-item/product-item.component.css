@@ -16,3 +16,29 @@
 .card {
   width: 100%;
 }
+.photoCard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.precio {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 1em;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  text-align: center;
+}
+
+.ratingNumber {
+  /* center horizontally and vertically */
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.ratingStar {
+  font-size: 0.8em;
+}

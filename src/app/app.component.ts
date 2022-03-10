@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import SearchOptions from 'src/models/SearchOptions';
 import cities from './cities.json';
 @Component({
   selector: 'app-root',
@@ -10,6 +11,16 @@ export class AppComponent {
   location: [number, number] | undefined;
   title = 'PreciosBajosYa';
   city!: string;
+
+  searchOptions: SearchOptions = {
+    search: '',
+    matchDescription: false,
+    orderedBy: 'precio',
+    ascendingOrder: true,
+    onlyShowImages: false,
+    onlyShowOpen: false,
+  };
+
   constructor(private cookieService: CookieService) {
     let loc = this.cookieService.get('location');
     if (loc) {

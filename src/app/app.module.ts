@@ -16,6 +16,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ProductItemComponent } from './product-item/product-item.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { ProductItemComponent } from './product-item/product-item.component';
     MatIconModule,
     ReactiveFormsModule,
     MatPaginatorModule,
+    MatTooltipModule,
+    MatProgressSpinnerModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],

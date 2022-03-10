@@ -1,5 +1,7 @@
 <div class="container full-width">
-  <img mat-card-md-image class="comida" [src]="productImage" />
+  <mat-card class="">
+    <img mat-card-md-image class="comida" [src]="productImage" />
+  </mat-card>
 
   <mat-card class="card">
     <mat-card-title-group>
@@ -8,7 +10,18 @@
           product.link
         }}-menu"
       >
-        <img mat-card-avatar [src]="restaurantImage" />
+        <img
+          mat-card-avatar
+          [src]="restaurantImage"
+          matTooltip="{{ product.restaurantName }}"
+        />
+
+        <div class="rating">
+          <i class="material-icons ratingStar">star</i>
+          <div class="ratingNumber">
+            {{ product.generalScore != 0 ? product.generalScore : "-" }}
+          </div>
+        </div>
       </a>
       <mat-card-title>{{ product.nombre }}</mat-card-title>
       <mat-card-subtitle>{{ product.seccion }}</mat-card-subtitle>
@@ -16,5 +29,8 @@
     <mat-card-content>
       {{ product.descripcion }}
     </mat-card-content>
+    <mat-card-footer class="precio">
+      <b>${{ product.precio }} </b>
+    </mat-card-footer>
   </mat-card>
 </div>

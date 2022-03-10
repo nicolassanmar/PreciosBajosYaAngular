@@ -19,7 +19,6 @@ export class ProductItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.product.imagenes);
     this.productImage =
       this.product.imagenes &&
       this.product.imagenes !== '' &&
