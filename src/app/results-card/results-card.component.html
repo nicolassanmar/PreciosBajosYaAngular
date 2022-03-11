@@ -19,6 +19,7 @@
   <div class="item" *ngFor="let product of productsSlice">
     <app-product-item [product]="product" [city]="city"></app-product-item>
   </div>
+  <p *ngIf="productsSlice.length == 0">No hay resultados para tu búsqueda</p>
 </div>
 
 <mat-paginator

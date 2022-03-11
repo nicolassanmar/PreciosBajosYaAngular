@@ -1,4 +1,5 @@
 <div class="container full-width">
+  <div class="cerrado full-width" *ngIf="product.opened != 1">cerrado</div>
   <mat-card class="">
     <img mat-card-md-image class="comida" [src]="productImage" />
   </mat-card>

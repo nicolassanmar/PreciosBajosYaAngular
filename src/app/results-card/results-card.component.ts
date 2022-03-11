@@ -44,6 +44,7 @@ export class ResultsCardComponent implements OnInit {
               restaurantId: restaurante.restaurantId,
               deliveryTimeMaxMinutes: restaurante.deliveryTimeMaxMinutes,
               deliveryTimeMinMinutes: restaurante.deliveryTimeMinMinutes,
+              opened: restaurante.opened,
               generalScore: restaurante.generalScore,
               link: restaurante.link,
               nextHour: restaurante.nextHour,
@@ -97,8 +98,8 @@ export class ResultsCardComponent implements OnInit {
       if (searchOptions.onlyShowImages && product.imagenes.length == 0) {
         return false;
       }
-      const currentDate = new Date();
-      if (searchOptions.onlyShowOpen && product.nextHourClose) {
+      console.log(product.opened);
+      if (searchOptions.onlyShowOpen && product.opened != 1) {
         return false;
       }
       return true;

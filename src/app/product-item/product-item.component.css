@@ -9,12 +9,14 @@
   justify-content: left;
   align-items: left;
   height: 100%;
+  flex-wrap: wrap;
 }
 .full-width {
   width: 100%;
 }
 .card {
   width: 100%;
+  flex: 1 0;
 }
 .photoCard {
   background-size: cover;
@@ -41,4 +43,15 @@ a {
 }
 .ratingStar {
   font-size: 0.8em;
+}
+.cerrado {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(16, 4, 35);
+  background: rgb(253, 211, 187);
+  padding: 1px;
+  border-radius: 6px 6px 0px 0px;
+  text-transform: uppercase;
 }
