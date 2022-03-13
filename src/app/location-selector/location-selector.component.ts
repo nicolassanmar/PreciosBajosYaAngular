@@ -1,8 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import * as mapboxgl from 'mapbox-gl';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { FormControl, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-location-selector',
@@ -17,7 +17,7 @@ export class LocationSelectorComponent implements OnInit {
   marker!: mapboxgl.Marker;
 
   locationForm = new FormGroup({
-    locationInput: new FormControl('', Validators.required),
+    locationInput: new FormControl(''),
   });
 
   @Output() submitLocation = new EventEmitter();

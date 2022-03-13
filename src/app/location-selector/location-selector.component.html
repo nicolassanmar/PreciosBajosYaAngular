@@ -1,31 +1,37 @@
-<mat-card>
-  <mat-card-title class="cardTitle">¡Elige tu ubicación!</mat-card-title>
-  <mat-card-title class="locationSearch">
-    <form [formGroup]="locationForm" class="location-form">
-      <mat-form-field class="full-width" appearance="outline">
-        <input
-          matInput
-          placeholder="Ciudad o punto de interés"
-          class="locationInput"
-          formControlName="locationInput"
-        />
-        <button
-          mat-icon-button
-          color="primary"
-          aria-label="Example icon button with a home icon"
-          (click)="onSearch()"
-        >
-          <mat-icon>search</mat-icon>
-        </button>
-      </mat-form-field>
-    </form>
-  </mat-card-title>
-  <mat-card-content>
-    <div id="mapContainer"></div>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-flat-button color="primary" (click)="onSubmitLocation()">
-      Siguiente
-    </button>
-  </mat-card-actions>
-</mat-card>
+<div class="content">
+  <mat-card>
+    <mat-card-title class="cardTitle"
+      >¡Elige tu ubicación, para que podamos mostrarte locales
+      cercanos!</mat-card-title
+    >
+    <mat-card-title class="locationSearch">
+      <form [formGroup]="locationForm" class="location-form">
+        <div class="full-width locationField" appearance="outline">
+          <input
+            matInput
+            placeholder="Ciudad o punto de interés"
+            class="locationInput"
+            formControlName="locationInput"
+          />
+          <button
+            class="locationSearchIcon"
+            mat-icon-button
+            color="primary"
+            aria-label="Example icon button with a home icon"
+            (click)="onSearch()"
+          >
+            <mat-icon>search</mat-icon>
+          </button>
+        </div>
+      </form>
+    </mat-card-title>
+    <mat-card-content>
+      <div id="mapContainer"></div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" (click)="onSubmitLocation()">
+        Siguiente
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

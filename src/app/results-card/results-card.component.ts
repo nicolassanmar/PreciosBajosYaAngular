@@ -31,34 +31,37 @@ export class ResultsCardComponent implements OnInit {
     console.log('City: ' + this.city);
     console.log('Querying ' + this.location);
     console.log('Productos: ' + this.products);
-    this.http
-      .get<RestauranteModel[]>(
-        `${environment.backendUrl}/scraper/getAllProductsInArea?lat=${this.location[0]}&long=${this.location[1]}`
-      )
-      .subscribe((data) => {
-        const restaurantesProductos = data.map((restaurante) => {
-          return restaurante.products.map((producto) => {
-            return {
-              ...producto,
-              restaurantName: restaurante.name,
-              restaurantId: restaurante.restaurantId,
-              deliveryTimeMaxMinutes: restaurante.deliveryTimeMaxMinutes,
-              deliveryTimeMinMinutes: restaurante.deliveryTimeMinMinutes,
-              opened: restaurante.opened,
-              generalScore: restaurante.generalScore,
-              link: restaurante.link,
-              nextHour: restaurante.nextHour,
-              nextHourClose: restaurante.nextHourClose,
-              shippingAmount: restaurante.shippingAmount,
-              logo: restaurante.logo,
-            };
+    const fetchData = async () => {
+      this.http
+        .get<RestauranteModel[]>(
+          `${environment.backendUrl}/scraper/getAllProductsInArea?lat=${this.location[0]}&long=${this.location[1]}`
+        )
+        .subscribe((data) => {
+          const restaurantesProductos = data.map((restaurante) => {
+            return restaurante.products.map((producto) => {
+              return {
+                ...producto,
+                restaurantName: restaurante.name,
+                restaurantId: restaurante.restaurantId,
+                deliveryTimeMaxMinutes: restaurante.deliveryTimeMaxMinutes,
+                deliveryTimeMinMinutes: restaurante.deliveryTimeMinMinutes,
+                opened: restaurante.opened,
+                generalScore: restaurante.generalScore,
+                link: restaurante.link,
+                nextHour: restaurante.nextHour,
+                nextHourClose: restaurante.nextHourClose,
+                shippingAmount: restaurante.shippingAmount,
+                logo: restaurante.logo,
+              };
+            });
           });
+          this.products = restaurantesProductos.flat();
+          this.searchedProducts = this.products;
+          this.productsSlice = this.searchedProducts.slice(0, this.pageSize);
+          this.onProductSearch(this.latestSearchOptions);
         });
-        this.products = restaurantesProductos.flat();
-        this.searchedProducts = this.products;
-        this.productsSlice = this.searchedProducts.slice(0, this.pageSize);
-        this.onProductSearch(this.latestSearchOptions);
-      });
+    };
+    fetchData();
   }
 
   onResetLocation(): void {
@@ -91,14 +94,17 @@ export class ResultsCardComponent implements OnInit {
         searchOptions.search.length > 0 &&
         !product.nombre
           .toLowerCase()
-          .includes(searchOptions.search.toLowerCase())
+          .includes(searchOptions.search.toLowerCase()) &&
+        (searchOptions.matchDescription === false ||
+          !product.descripcion
+            .toLowerCase()
+            .includes(searchOptions.search.toLowerCase()))
       ) {
         return false;
       }
       if (searchOptions.onlyShowImages && product.imagenes.length == 0) {
         return false;
       }
-      console.log(product.opened);
       if (searchOptions.onlyShowOpen && product.opened != 1) {
         return false;
       }
@@ -112,25 +118,27 @@ export class ResultsCardComponent implements OnInit {
     products: ProductoFlatModel[],
     searchOptions: SearchOptions
   ): ProductoFlatModel[] {
+    const mult = searchOptions.ascendingOrder == true ? 1 : -1;
     if (searchOptions.orderedBy === 'precio') {
       return products.sort((a, b) => {
-        return Number(a.precio) - Number(b.precio);
+        return (Number(a.precio) - Number(b.precio)) * mult;
       });
     } else if (searchOptions.orderedBy === 'precioConEnvio') {
       return products.sort((a, b) => {
         return (
-          Number(a.precio) +
-          Number(a.shippingAmount) -
-          (Number(b.precio) + Number(b.shippingAmount))
+          (Number(a.precio) +
+            Number(a.shippingAmount) -
+            (Number(b.precio) + Number(b.shippingAmount))) *
+          mult
         );
       });
     } else if (searchOptions.orderedBy === 'tiempoEnvio') {
       return products.sort((a, b) => {
-        return a.deliveryTimeMaxMinutes - b.deliveryTimeMaxMinutes;
+        return (a.deliveryTimeMaxMinutes - b.deliveryTimeMaxMinutes) * mult;
       });
     } else if (searchOptions.orderedBy === 'estrellas') {
       return products.sort((a, b) => {
-        return a.generalScore - b.generalScore;
+        return (a.generalScore - b.generalScore) * mult;
       });
     } else {
       return products;
