@@ -1,16 +1,16 @@
 <form [formGroup]="searchForm" class="search-form">
-  <mat-form-field class="full-width" appearance="outline">
+  <mat-form-field class="search-form-row" appearance="outline">
     <input
       matInput
       placeholder="Empanada..."
-      class="locationInput"
       formControlName="search"
+      class="input"
     />
   </mat-form-field>
   <mat-checkbox formControlName="matchDescription"
     >Buscar en la descripción del producto</mat-checkbox
   >
-  <p>
+  <p class="search-form-row">
     Ordenar por:
     <mat-button-toggle-group
       name="orderBy"
@@ -19,12 +19,16 @@
       formControlName="orderBy"
     >
       <!-- [formControl]="orderBy" -->
-      <mat-button-toggle value="precio">Precio</mat-button-toggle>
-      <mat-button-toggle value="precioConEnvio"
+      <mat-button-toggle class="btn" value="precio">Precio</mat-button-toggle>
+      <mat-button-toggle class="btn" value="precioConEnvio"
         >Precio con Envío</mat-button-toggle
       >
-      <mat-button-toggle value="estrellas">Estrellas</mat-button-toggle>
-      <mat-button-toggle value="tiempoEnvio">Tiempo de Envío</mat-button-toggle>
+      <mat-button-toggle class="btn" value="estrellas"
+        >Estrellas</mat-button-toggle
+      >
+      <mat-button-toggle class="btn" value="tiempoEnvio"
+        >Tiempo de Envío</mat-button-toggle
+      >
     </mat-button-toggle-group>
 
     <mat-button-toggle-group
@@ -33,21 +37,21 @@
       value="{{ true }}"
       formControlName="ascendingOrder"
     >
-      <mat-button-toggle value="{{ true }}"
+      <mat-button-toggle class="btn" value="{{ true }}"
         ><mat-icon>keyboard_arrow_up</mat-icon>
       </mat-button-toggle>
-      <mat-button-toggle value="{{ false }}"
+      <mat-button-toggle class="btn" value="{{ false }}"
         ><mat-icon>keyboard_arrow_down</mat-icon>
       </mat-button-toggle>
     </mat-button-toggle-group>
   </p>
 
-  <p>
+  <p class="search-form-row">
     <mat-checkbox formControlName="onlyShowImages"
       >Mostrar sólo productos con imagen</mat-checkbox
     >
   </p>
-  <p>
+  <p class="search-form-row">
     <mat-checkbox formControlName="onlyShowOpen"
       >Mostrar sólo locales abiertos actualmente</mat-checkbox
     >

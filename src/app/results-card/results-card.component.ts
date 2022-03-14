@@ -144,4 +144,10 @@ export class ResultsCardComponent implements OnInit {
       return products;
     }
   }
+
+  infiniteScrollDistance = 2;
+  infiniteScrollThrottle = 50;
+  onScroll() {
+    console.log('scrolled!!');
+  }
 }

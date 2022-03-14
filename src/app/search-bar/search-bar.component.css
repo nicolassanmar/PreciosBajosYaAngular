@@ -1,8 +1,32 @@
 .search-form {
   display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 1em;
+  flex: 1 0;
+  flex-wrap: wrap;
+}
+
+.search-form-row {
+  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding: 0;
-  flex: 1;
+  flex: 1 0;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 0;
+  line-height: 0;
+}
+
+button {
+  padding: 0;
+  line-height: 0;
+}
+
+.input {
+  max-width: 400px;
 }

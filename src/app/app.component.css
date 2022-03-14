@@ -1,18 +1,5 @@
-.content {
-  padding: 50px;
-  margin-top: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
 .background {
   background-color: rgb(249, 246, 244);
   min-width: 100%;
   min-height: 100%;
-}
-
-@media screen and (max-width: 800px), (max-height: 500px) {
-  .content {
-    padding: 10px;
-  }
 }

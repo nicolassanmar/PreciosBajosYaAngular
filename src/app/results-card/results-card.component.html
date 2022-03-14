@@ -15,7 +15,13 @@
     stroke-width="5"
   ></circle>
 </svg>
-<div class="wrapper">
+<div
+  class="wrapper"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onScroll()"
+>
   <div class="item" *ngFor="let product of productsSlice">
     <app-product-item [product]="product" [city]="city"></app-product-item>
   </div>
