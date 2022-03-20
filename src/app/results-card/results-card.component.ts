@@ -1,9 +1,16 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import RestauranteModel from 'src/models/RestauranteModel';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import ProductoFlatModel from 'src/models/ProductoFlatModel';
-import { PageEvent } from '@angular/material/paginator';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import SearchOptions from 'src/models/SearchOptions';
 
 @Component({
@@ -23,7 +30,9 @@ export class ResultsCardComponent implements OnInit {
 
   latestSearchOptions!: SearchOptions;
 
-  pageSize = 10;
+  pageSize = 6;
+
+  @ViewChild('paginator') paginator!: MatPaginator;
 
   constructor(private http: HttpClient) {}
 
@@ -83,6 +92,7 @@ export class ResultsCardComponent implements OnInit {
     this.searchedProducts = this.orderProducts(filtered, searchOptions);
 
     this.productsSlice = this.searchedProducts.slice(0, this.pageSize);
+    this.paginator.firstPage();
   }
 
   filterProducts(
@@ -92,13 +102,13 @@ export class ResultsCardComponent implements OnInit {
     const filtered = products.filter((product) => {
       if (
         searchOptions.search.length > 0 &&
-        !product.nombre
-          .toLowerCase()
-          .includes(searchOptions.search.toLowerCase()) &&
+        !quitarTildes(product.nombre.toLowerCase()).includes(
+          quitarTildes(searchOptions.search.toLowerCase())
+        ) &&
         (searchOptions.matchDescription === false ||
-          !product.descripcion
-            .toLowerCase()
-            .includes(searchOptions.search.toLowerCase()))
+          !quitarTildes(product.descripcion.toLowerCase()).includes(
+            quitarTildes(searchOptions.search.toLowerCase())
+          ))
       ) {
         return false;
       }
@@ -151,3 +161,7 @@ export class ResultsCardComponent implements OnInit {
     console.log('scrolled!!');
   }
 }
+
+const quitarTildes = (string: string) => {
+  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+};

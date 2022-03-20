@@ -1,63 +1,80 @@
-<form [formGroup]="searchForm" class="search-form">
-  <mat-form-field class="search-form-row" appearance="outline">
-    <input
-      matInput
-      placeholder="Empanada..."
-      formControlName="search"
-      class="input"
-    />
-  </mat-form-field>
-  <mat-checkbox formControlName="matchDescription"
-    >Buscar en la descripción del producto</mat-checkbox
-  >
-  <p class="search-form-row">
-    Ordenar por:
-    <mat-button-toggle-group
-      name="orderBy"
-      aria-label="Order by"
-      value="precio"
-      formControlName="orderBy"
-    >
-      <!-- [formControl]="orderBy" -->
-      <mat-button-toggle class="btn" value="precio">Precio</mat-button-toggle>
-      <mat-button-toggle class="btn" value="precioConEnvio"
-        >Precio con Envío</mat-button-toggle
-      >
-      <mat-button-toggle class="btn" value="estrellas"
-        >Estrellas</mat-button-toggle
-      >
-      <mat-button-toggle class="btn" value="tiempoEnvio"
-        >Tiempo de Envío</mat-button-toggle
-      >
-    </mat-button-toggle-group>
+<mat-card class="card" (keyup.enter)="onSearch()">
+  <mat-card-content>
+    <form [formGroup]="searchForm" class="search-form">
+      <div class="search-form-col">
+        <div class="search-form-row">
+          <mat-form-field appearance="outline" class="ordenar">
+            <input
+              matInput
+              placeholder="Empanada..."
+              formControlName="search"
+              class="input"
+            />
+          </mat-form-field>
+          <mat-checkbox formControlName="matchDescription" class="ordenar"
+            >Buscar en la descripción del producto</mat-checkbox
+          >
+        </div>
+        <div class="search-form-row">
+          <div class="ordenar">Ordenar por:</div>
 
-    <mat-button-toggle-group
-      name="Ascending"
-      aria-label="Ascending or not"
-      value="{{ true }}"
-      formControlName="ascendingOrder"
-    >
-      <mat-button-toggle class="btn" value="{{ true }}"
-        ><mat-icon>keyboard_arrow_up</mat-icon>
-      </mat-button-toggle>
-      <mat-button-toggle class="btn" value="{{ false }}"
-        ><mat-icon>keyboard_arrow_down</mat-icon>
-      </mat-button-toggle>
-    </mat-button-toggle-group>
-  </p>
+          <div class="search-form-row">
+            <mat-button-toggle-group
+              name="orderBy"
+              aria-label="Order by"
+              value="precio"
+              formControlName="orderBy"
+              class="botonesOrderBy"
+            >
+              <!-- [formControl]="orderBy" -->
+              <mat-button-toggle class="btn" value="precio"
+                >Precio</mat-button-toggle
+              >
+              <mat-button-toggle class="btn" value="precioConEnvio"
+                >Precio con Envío</mat-button-toggle
+              >
+              <mat-button-toggle class="btn" value="estrellas"
+                >Estrellas</mat-button-toggle
+              >
+              <mat-button-toggle class="btn" value="tiempoEnvio"
+                >Tiempo de Envío</mat-button-toggle
+              >
+            </mat-button-toggle-group>
 
-  <p class="search-form-row">
-    <mat-checkbox formControlName="onlyShowImages"
-      >Mostrar sólo productos con imagen</mat-checkbox
-    >
-  </p>
-  <p class="search-form-row">
-    <mat-checkbox formControlName="onlyShowOpen"
-      >Mostrar sólo locales abiertos actualmente</mat-checkbox
-    >
-  </p>
-
-  <button mat-icon-button color="primary" (click)="onSearch()">
-    <mat-icon>search</mat-icon>
-  </button>
-</form>
+            <mat-button-toggle-group
+              name="Ascending"
+              aria-label="Ascending or not"
+              value="{{ true }}"
+              formControlName="ascendingOrder"
+            >
+              <mat-button-toggle class="btn" value="{{ true }}"
+                ><mat-icon>keyboard_arrow_up</mat-icon>
+              </mat-button-toggle>
+              <mat-button-toggle class="btn" value="{{ false }}"
+                ><mat-icon>keyboard_arrow_down</mat-icon>
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+      </div>
+      <div class="search-form-col">
+        <p class="search-form-row">
+          <mat-checkbox formControlName="onlyShowImages"
+            >Mostrar sólo productos con imagen</mat-checkbox
+          >
+        </p>
+        <p class="search-form-row">
+          <mat-checkbox formControlName="onlyShowOpen"
+            >Mostrar sólo locales abiertos actualmente</mat-checkbox
+          >
+        </p>
+      </div>
+      <div class="search-form-row"></div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSearch()">
+      Buscar
+    </button>
+  </mat-card-actions>
+</mat-card>
