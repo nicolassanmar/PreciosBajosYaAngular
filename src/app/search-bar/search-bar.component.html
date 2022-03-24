@@ -1,4 +1,4 @@
-<mat-card class="card" (keyup.enter)="onSearch()">
+<mat-card class="card" (keyup.enter)="onSearch()" *ngIf="!hidden">
   <mat-card-content>
     <form [formGroup]="searchForm" class="search-form">
       <div class="search-form-col">
@@ -11,7 +11,10 @@
               class="input"
             />
           </mat-form-field>
-          <mat-checkbox formControlName="matchDescription" class="ordenar"
+          <mat-checkbox
+            id="buscarDescripcionProducto"
+            formControlName="matchDescription"
+            class="ordenar"
             >Buscar en la descripción del producto</mat-checkbox
           >
         </div>
@@ -46,6 +49,7 @@
               aria-label="Ascending or not"
               value="{{ true }}"
               formControlName="ascendingOrder"
+              class="botonesOrderBy"
             >
               <mat-button-toggle class="btn" value="{{ true }}"
                 ><mat-icon>keyboard_arrow_up</mat-icon>
@@ -69,7 +73,6 @@
           >
         </p>
       </div>
-      <div class="search-form-row"></div>
     </form>
   </mat-card-content>
   <mat-card-actions>
@@ -77,4 +80,15 @@
       Buscar
     </button>
   </mat-card-actions>
+  <mat-card-footer>
+    <mat-icon class="showButton" (click)="onHide()"
+      >vertical_align_top</mat-icon
+    >
+  </mat-card-footer>
 </mat-card>
+
+<div class="showButtonWrapper">
+  <mat-icon (click)="onHide()" *ngIf="hidden" class="showButton" id="show"
+    >vertical_align_bottom</mat-icon
+  >
+</div>

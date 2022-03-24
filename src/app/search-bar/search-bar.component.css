@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: left;
   align-items: left;
-  padding: 1em;
+
   flex: 1 0;
   flex-wrap: wrap;
 }
@@ -23,9 +23,10 @@
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  padding: 0;
+  padding: 1em;
   flex: 1 0;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .ordenar {
@@ -35,6 +36,7 @@
   align-items: center;
   padding-right: 1em;
   max-height: 2em;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -53,12 +55,27 @@ button {
 }
 
 .botonesOrderBy {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.botonesOrderBy > * {
+  flex: 1 0;
+  border: 1px solid #ccc;
 }
 
 @media screen and (max-width: 440px) {
   body .btn {
     padding: 0 !important;
     line-height: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .search-form {
+    padding: 0;
   }
 
   #mat-button-toggle-2-button > span {
@@ -66,5 +83,33 @@ button {
   }
   .mat-button-toggle-label-content {
     padding: 0;
+  }
+}
+
+#buscarDescripcionProducto {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.showButton {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translate(0, -31px);
+  padding: 0em;
+  border: 1px solid #747474;
+  color: #747474;
+  border-radius: 6px 6px 6px 6px;
+}
+
+@media screen and (max-width: 375px) {
+  #show {
+    margin-top: 10px;
+  }
+  .showButtonWrapper {
+    margin-top: 20px;
   }
 }

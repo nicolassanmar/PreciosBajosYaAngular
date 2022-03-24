@@ -8,6 +8,8 @@ import SearchOptions from 'src/models/SearchOptions';
   styleUrls: ['./search-bar.component.css'],
 })
 export class SearchBarComponent implements OnInit {
+  hidden: boolean = false;
+
   @Output() searchEvent = new EventEmitter<SearchOptions>();
 
   searchForm = new FormGroup({
@@ -37,5 +39,9 @@ export class SearchBarComponent implements OnInit {
       formOptions.onlyShowOpen
     );
     this.searchEvent.emit(options);
+  }
+
+  onHide() {
+    this.hidden = !this.hidden;
   }
 }
