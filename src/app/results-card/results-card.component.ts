@@ -12,6 +12,12 @@ import { environment } from 'src/environments/environment';
 import ProductoFlatModel from 'src/models/ProductoFlatModel';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import SearchOptions from 'src/models/SearchOptions';
+import {
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA,
+} from '@angular/material/dialog';
+import * as productComponent from '../product-item/product-item.component';
 
 @Component({
   selector: 'app-results-card',
@@ -34,7 +40,7 @@ export class ResultsCardComponent implements OnInit {
 
   @ViewChild('paginator') paginator!: MatPaginator;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     console.log('City: ' + this.city);
@@ -155,10 +161,19 @@ export class ResultsCardComponent implements OnInit {
     }
   }
 
-  infiniteScrollDistance = 2;
-  infiniteScrollThrottle = 50;
-  onScroll() {
-    console.log('scrolled!!');
+  onRandom() {
+    const getRandomInt = (min: number, max: number) => {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    const randomProduct =
+      this.searchedProducts[getRandomInt(0, this.searchedProducts.length)];
+
+    console.log(randomProduct);
+    const dialogRef = this.dialog.open(productComponent.ProductItemComponent);
+    dialogRef.componentInstance.product = randomProduct;
   }
 }
 

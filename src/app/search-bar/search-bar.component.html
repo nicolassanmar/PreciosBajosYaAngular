@@ -75,9 +75,23 @@
       </div>
     </form>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="onSearch()">
+  <mat-card-actions class="footer">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="onSearch()"
+      id="botonBuscar"
+    >
       Buscar
+    </button>
+
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="onRandom()"
+      id="botonSorprendeme"
+    >
+      Sorpréndeme
     </button>
   </mat-card-actions>
   <mat-card-footer>
@@ -88,7 +102,11 @@
 </mat-card>
 
 <div class="showButtonWrapper">
-  <mat-icon (click)="onHide()" *ngIf="hidden" class="showButton" id="show"
+  <mat-icon
+    (click)="onHide()"
+    *ngIf="hidden"
+    class="showButton closedButton"
+    id="show"
     >vertical_align_bottom</mat-icon
   >
 </div>

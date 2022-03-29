@@ -11,6 +11,7 @@ export class SearchBarComponent implements OnInit {
   hidden: boolean = false;
 
   @Output() searchEvent = new EventEmitter<SearchOptions>();
+  @Output() randomEvent = new EventEmitter();
 
   searchForm = new FormGroup({
     search: new FormControl(''),
@@ -43,5 +44,9 @@ export class SearchBarComponent implements OnInit {
 
   onHide() {
     this.hidden = !this.hidden;
+  }
+
+  onRandom() {
+    this.randomEvent.emit();
   }
 }

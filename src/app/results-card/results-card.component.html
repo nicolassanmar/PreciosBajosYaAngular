@@ -4,7 +4,10 @@
   </button>
 </mat-toolbar>
 
-<app-search-bar (searchEvent)="onProductSearch($event)"></app-search-bar>
+<app-search-bar
+  (searchEvent)="onProductSearch($event)"
+  (randomEvent)="onRandom()"
+></app-search-bar>
 <svg class="spinner" viewBox="0 0 50 50" *ngIf="products == undefined">
   <circle
     class="path"
@@ -15,7 +18,7 @@
     stroke-width="5"
   ></circle>
 </svg>
-<div class="wrapper" (scrolled)="onScroll()">
+<div class="wrapper">
   <div class="item" *ngFor="let product of productsSlice">
     <app-product-item [product]="product" [city]="city"></app-product-item>
   </div>
