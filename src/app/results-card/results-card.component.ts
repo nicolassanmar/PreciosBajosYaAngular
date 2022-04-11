@@ -178,5 +178,7 @@ export class ResultsCardComponent implements OnInit {
 }
 
 const quitarTildes = (string: string) => {
-  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return string
+    .normalize('NFD')
+    .replace(/[\u0300-\u0302]|[\u0304-\u036f]/g, '');
 };
