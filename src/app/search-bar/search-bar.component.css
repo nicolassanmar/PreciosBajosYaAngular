@@ -113,7 +113,14 @@ button {
   border: 1px solid #747474;
   color: #747474;
   border-radius: 6px 6px 6px 6px;
+  cursor: pointer;
 }
+
+.showButton:hover {
+  background-color: #747474;
+  color: white;
+}
+
 .closedButton {
   margin-right: auto;
 }

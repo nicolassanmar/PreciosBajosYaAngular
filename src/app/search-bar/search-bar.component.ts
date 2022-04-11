@@ -17,7 +17,7 @@ export class SearchBarComponent implements OnInit {
     search: new FormControl(''),
     matchDescription: new FormControl(false),
     orderBy: new FormControl('precio'),
-    ascendingOrder: new FormControl(true),
+    ascendingOrder: new FormControl('true'),
     onlyShowImages: new FormControl(false),
     onlyShowOpen: new FormControl(false),
   });
@@ -35,7 +35,7 @@ export class SearchBarComponent implements OnInit {
       formOptions.search,
       formOptions.matchDescription,
       formOptions.orderBy,
-      formOptions.ascendingOrder,
+      formOptions.ascendingOrder === 'true' ? true : false,
       formOptions.onlyShowImages,
       formOptions.onlyShowOpen
     );

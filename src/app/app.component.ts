@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { environment } from 'src/environments/environment.prod';
 import SearchOptions from 'src/models/SearchOptions';
 import cities from './cities.json';
 @Component({
@@ -21,11 +23,16 @@ export class AppComponent {
     onlyShowOpen: false,
   };
 
-  constructor(private cookieService: CookieService) {
+  constructor(private cookieService: CookieService, private http: HttpClient) {
     let loc = this.cookieService.get('location');
     if (loc) {
       this.location = JSON.parse(loc);
       this.city = this.cookieService.get('city');
+    }
+    if (environment.isheroku) {
+      this.http.get(environment.backendUrl).subscribe((data) => {
+        console.log(data);
+      });
     }
   }
 
