@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import SearchOptions from 'src/models/SearchOptions';
 import cities from './cities.json';
 @Component({
